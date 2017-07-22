@@ -5,7 +5,8 @@
     <div class="card-container">
         <div class="card-header">
             <h2 class="docs-example-viewer-title-spacer">Beispiele</h2>
-            <button type="button" class="bv-btn-primary" (click)="toggleSourceView()">Show source</button>
+            <button type="button" class="bv-btn-primary" (click)="toggleSourceView()">{{showSource ? 'Code ausblenden' : 'Code anzeigen'}}
+            </button>
         </div>
         <div class="docs-example-viewer-source" *ngIf="showSource">
             <div class="content-section documentation">
