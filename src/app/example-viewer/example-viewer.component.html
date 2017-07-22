@@ -1,9 +1,12 @@
+<div class="example-viewer-header">
+    <h1>{{title | titlecase}}</h1>
+</div>
 <div class="docs-example-viewer-wrapper">
-    <div class="docs-example-viewer-title">
-        <h1 class="docs-example-viewer-title-spacer">{{title | titlecase}}</h1>
-        <button type="button" class="bv-btn-primary" (click)="toggleSourceView()">Show source</button>
-    </div>
     <div class="card-container">
+        <div class="card-header">
+            <h2 class="docs-example-viewer-title-spacer">Beispiele</h2>
+            <button type="button" class="bv-btn-primary" (click)="toggleSourceView()">Show source</button>
+        </div>
         <div class="docs-example-viewer-source" *ngIf="showSource">
             <div class="content-section documentation">
                 <p-tabView effect="fade">

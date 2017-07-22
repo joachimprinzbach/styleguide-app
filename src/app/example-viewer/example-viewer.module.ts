@@ -8,14 +8,15 @@ import {TabViewModule} from 'primeng/primeng';
 import {CodeHighlighterDirective} from './codehighlighter';
 
 @NgModule({
-  imports: [
-    CommonModule,
-	  HttpClientModule,
-	  TabViewModule
-  ],
+	imports: [
+		CommonModule,
+		HttpClientModule,
+		TabViewModule
+
+	],
 	exports: [ExampleViewerPageComponent],
 	declarations: [ExampleViewerComponent, ExampleViewerPageComponent, CodeHighlighterDirective],
-  providers: [ExampleLoaderService]
+	providers: [ExampleLoaderService]
 })
 export class ExampleViewerModule {
 }

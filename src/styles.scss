@@ -95,10 +95,6 @@ button {
   }
 }
 
-.documentation .ui-tabview-panel {
-  color: #404C51 !important;
-}
-
 .documentation h3 {
   margin-top: 25px;
   margin-bottom: 0px;
@@ -128,29 +124,10 @@ button {
   color: #0273D4;
 }
 
-.documentation .btn-viewsource {
-  background-color: #444444;
-  padding: .5em;
-  border-radius: 2px;
-  color: #ffffff;
-  font-weight: bold;
-  margin-bottom: 1em;
-  display: inline-block;
-  transition: background-color .3s;
-}
-
-.documentation .btn-viewsource i {
-  margin-right: .25em;
-}
-
-.documentation .btn-viewsource:hover {
-  background-color: #595959;
-}
-
 .documentation .ui-tabview {
   background: none;
   border: 0 none;
-  color: #5C666A;
+  color: #fff;
   font-weight: lighter;
   -moz-border-radius: 4px !important;
   -webkit-border-radius: 4px !important;
@@ -159,7 +136,7 @@ button {
 
 .documentation .ui-tabview .ui-tabview-nav {
   background: $BASLER_PRIMARY_DARKBLUE;
-  margin-bottom: -1px;
+  margin-bottom: -2px;
   padding: 3px 3px 0px 3px !important;
   border-top-right-radius: 4px !important;
   border-top-left-radius: 4px !important;
@@ -170,8 +147,8 @@ button {
 .documentation .ui-tabview .ui-tabview-nav li,
 .documentation .ui-tabview .ui-tabview-nav li.ui-state-hover {
   border: 0px none !important;
-  background: $BASLER_SECONDARY_LIGHTBLUE;
-  border-color: $BASLER_SECONDARY_LIGHTBLUE;
+  background: $BASLER_SECONDARY_LIGHTBLUE !important;
+  border-color: $BASLER_SECONDARY_LIGHTBLUE !important;
   box-shadow: none !important;
   border-top-right-radius: 4px !important;
   border-top-left-radius: 4px !important;
@@ -192,7 +169,7 @@ button {
 }
 
 .documentation .ui-tabview .ui-tabview-nav li.ui-state-active a {
-  color: #5C666A !important;
+  color: $BASLER_PRIMARY_DARKBLUE !important;
   font-weight: normal !important;
 }
 
@@ -201,53 +178,17 @@ button {
 }
 
 .documentation .ui-tabview .ui-tabview-nav li.ui-tabview-selected {
-  background: #F5F6F7 !important;
+  background: #fff !important;
 }
 
 .documentation .ui-tabview .ui-tabview-panels {
-  border-top: 1px solid #F5F6F7 !important;;
-  color: #5C666A !important;
-  background: #F5F6F7;
+  border-top: 1px solid #fff !important;;
+  color: #fff !important;
+  background: #fff;
 }
 
 .documentation .ui-tabview.ui-tabview-top > .ui-tabview-nav li {
   top: 0px !important;
-}
-
-.doc-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.doc-table th {
-  background-color: #dae8ef;
-  color: #404C51;
-  border: solid 1px #C1D5DF;
-  padding: 5px;
-  font-size: 16px;
-  text-align: left;
-}
-
-.doc-table tbody td {
-  color: #404C51;
-  padding: 4px 10px;
-  border: 1px solid #E5EBF0;
-  font-size: 15px;
-  opacity: .90;
-}
-
-.doc-table tbody tr:nth-child(even) {
-  background-color: #FBFCFD;
-}
-
-.doc-table tbody tr:nth-child(odd) {
-  background-color: #F3F6F9;
-}
-
-@media (max-width: 768px) {
-  .doc-table tbody td {
-    word-break: break-word;
-  }
 }
 
 pre {
