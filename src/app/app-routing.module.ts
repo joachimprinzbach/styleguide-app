@@ -5,7 +5,8 @@ import {HomeComponent} from './home/home.component';
 @NgModule({
   imports: [
     RouterModule.forRoot([
-      {path: '', component: HomeComponent}
+      {path: '', component: HomeComponent},
+      {path: 'tile', loadChildren: './examples/panel/tile/tile-example.module#TileExampleModule'},
     ])
   ],
   exports: [RouterModule]

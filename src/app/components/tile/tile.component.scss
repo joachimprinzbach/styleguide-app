@@ -1,0 +1,11 @@
+@import "../../../variables";
+
+.tile-container {
+  flex: 1;
+  box-shadow: 0 0 10px 0 $BASLER_CARD_SHADOW_COLOR;
+  background-color: $BASLER_SECONDARY_BG_WHITE;
+  &:hover {
+    box-shadow: 0 0 30px 0 $BASLER_CARD_SHADOW_COLOR;
+    cursor: pointer;
+  }
+}

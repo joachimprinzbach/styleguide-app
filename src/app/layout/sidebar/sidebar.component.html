@@ -33,7 +33,7 @@
     </a>
     <div
       [ngClass]="{'submenushow': (panelmenutitle.id == activeMenuId), 'submenuhide': (panelmenutitle.id != activeMenuId)}">
-      <a [routerLink]="['/accordion']" (click)="menuActive = false">&#9679; Accordion</a>
+      <a [routerLink]="['/tile']" (click)="menuActive = false">&#9679; Tile</a>
       <a [routerLink]="['/toolbar']" (click)="menuActive = false">&#9679; Toolbar</a>
     </div>
 
