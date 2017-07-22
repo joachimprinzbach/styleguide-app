@@ -5,9 +5,10 @@ import {AppComponent} from './app.component';
 import {RouterModule, Routes} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {TopbarComponent} from './layout/topbar/topbar.component';
-import { SidebarComponent } from './layout/sidebar/sidebar.component';
+import {SidebarComponent} from './layout/sidebar/sidebar.component';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeComponent} from './home/home.component';
+import {TileExampleComponent} from './examples/panel/tile/tile-example.component';
 
 const routes: Routes = [];
 
@@ -16,7 +17,8 @@ const routes: Routes = [];
     AppComponent,
     TopbarComponent,
     SidebarComponent,
-    HomeComponent
+    HomeComponent,
+    TileExampleComponent
   ],
   imports: [
     BrowserModule,
