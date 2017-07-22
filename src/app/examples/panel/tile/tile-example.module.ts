@@ -6,17 +6,17 @@ import {TileModule} from '../../../components/tile/tile.module';
 import {ExampleViewerModule} from '../../../example-viewer/example-viewer.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forChild([
-      {path: '', component: TileExampleComponent}
-    ]),
-    ExampleViewerModule,
-    TileModule
-  ],
-  declarations: [
-    TileExampleComponent
-  ]
+	imports: [
+		CommonModule,
+		RouterModule.forChild([
+			{path: '', component: TileExampleComponent}
+		]),
+		ExampleViewerModule,
+		TileModule
+	],
+	declarations: [
+		TileExampleComponent
+	]
 })
 export class TileExampleModule {
 }

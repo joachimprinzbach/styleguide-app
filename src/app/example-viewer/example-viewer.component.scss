@@ -2,10 +2,25 @@
   display: block;
 }
 
+.card-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
 .docs-example-viewer-wrapper {
+  padding: 20px 50px 70px 50px;
   h3 {
     margin-top: 10px;
   }
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
 }
 
 .docs-example-viewer-title {
@@ -29,17 +44,6 @@
   border-bottom: solid 1px #dde3e6;
   padding: 30px;
   overflow: hidden;
-  background-color: #f5f7f8;
-  &.introduction {
-    background-image: linear-gradient(to left, #2bc0ec, #1b81d7);
-    color: #ffffff;
-  }
-  &:first-of-type > div > span {
-    line-height: 1.5em;
-  }
-  h2 {
-    margin-top: 0;
-  }
 }
 
 .documentation {
