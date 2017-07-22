@@ -1,5 +1,17 @@
 <div class="layout-sidebar" [ngClass]="{'active': menuActive}">
   <div class="layout-menu">
+
+    <a id="menu_typography" #typographymenutitle [class.active-menuitem]="typographymenutitle.id == activeMenuId"
+       (click)="activeMenuId = (activeMenuId === typographymenutitle.id ? null : typographymenutitle.id)">
+      <img src="assets/img/icons/input-active.svg" class="layout-menu-icon-active"/>
+      <img src="assets/img/icons/input.svg" class="layout-menu-icon-inactive"/>
+      <span>Typography</span>
+    </a>
+    <div
+            [ngClass]="{'submenushow': (typographymenutitle.id == activeMenuId), 'submenuhide': (typographymenutitle.id != activeMenuId)}">
+      <a [routerLink]="['/typography']" (click)="menuActive = false">&#9679; Typography</a>
+    </div>
+
     <a id="button_menutitle" #buttonmenutitle [class.active-menuitem]="buttonmenutitle.id == activeMenuId"
        (click)="activeMenuId = (activeMenuId === buttonmenutitle.id ? null : buttonmenutitle.id)">
       <img src="assets/img/icons/button-active.svg" class="layout-menu-icon-active"/>
