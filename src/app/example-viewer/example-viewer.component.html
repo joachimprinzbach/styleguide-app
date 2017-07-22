@@ -1,13 +1,31 @@
 <div class="docs-example-viewer-wrapper">
-  <div class="docs-example-viewer-title">
-    <div class="docs-example-viewer-title-spacer">{{title}}</div>
-
-    <button type="button" (click)="toggleSourceView()"></button>
-  </div>
-
-  <div class="docs-example-viewer-source" *ngIf="showSource">
-  </div>
-
-  <div class="docs-example-viewer-body">
-  </div>
+    <div class="docs-example-viewer-title">
+        <div class="docs-example-viewer-title-spacer">{{title | titlecase}}</div>
+        <button type="button" class="primary" (click)="toggleSourceView()">Show source</button>
+    </div>
+    <div class="docs-example-viewer-source" *ngIf="showSource">
+        <div class="content-section documentation">
+            <p-tabView effect="fade">
+                <p-tabPanel [header]="'HTML'" *ngIf="htmlTemplateFileContent" [selected]="htmlTemplateFileContent">
+                    <pre>
+                        <code [innerHTML]="htmlTemplateFileContent" class="language-markup" appCode ngNonBindable>
+                        </code>
+                    </pre>
+                </p-tabPanel>
+                <p-tabPanel [header]="'TS'" *ngIf="tsFileContent" [selected]="!htmlTemplateFileContent">
+                    <pre>
+                        <code [innerHTML]="tsFileContent" class="language-typescript" appCode ngNonBindable>
+                        </code>
+                    </pre>
+                </p-tabPanel>
+                <p-tabPanel [header]="'CSS'" *ngIf="sassFileContent">
+                    <pre>
+                        <code [innerHTML]="sassFileContent" class="language-css" appCode ngNonBindable>
+                        </code>
+                    </pre>
+                </p-tabPanel>
+            </p-tabView>
+        </div>
+    </div>
+    <ng-content></ng-content>
 </div>

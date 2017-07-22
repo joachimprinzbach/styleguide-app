@@ -8,8 +8,21 @@ export class ExampleLoaderService {
   constructor(private http: HttpClient) {
   }
 
-  loadExampleFile(exampleName: string): Observable<any> {
-    return this.http.get('assets/examples/panel/tile/tile-example.component.ts.txt', {responseType: 'text'});
-  }
+	loadTypescriptFile(groupName: string, exampleName: string): Observable<any> {
+		return this.loadExampleFile(groupName, exampleName, 'ts');
+	}
+
+	loadHtmlTemplateFile(groupName: string, exampleName: string): Observable<any> {
+		return this.loadExampleFile(groupName, exampleName, 'html');
+	}
+
+	loadSassFile(groupName: string, exampleName: string): Observable<any> {
+		return this.loadExampleFile(groupName, exampleName, 'scss');
+	}
+
+	private loadExampleFile(groupName: string, exampleName: string, extension: string): Observable<any> {
+		return this.http.get(`assets/examples/${groupName}/${exampleName}/${exampleName}-example.component.${extension}.txt`,
+			{responseType: 'text'});
+	}
 
 }

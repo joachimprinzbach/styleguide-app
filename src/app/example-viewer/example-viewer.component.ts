@@ -1,26 +1,21 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {ExampleLoaderService} from './example-loader.service';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-example-viewer',
   templateUrl: './example-viewer.component.html',
   styleUrls: ['./example-viewer.component.scss']
 })
-export class ExampleViewerComponent implements OnInit {
+export class ExampleViewerComponent {
 
   showSource = false;
   @Input()
   title: string;
-
-  constructor(private exampleLoader: ExampleLoaderService) {
-  }
-
-  ngOnInit(): void {
-    this.exampleLoader.loadExampleFile('tile')
-      .subscribe(content => {
-        console.log('Contains: ' + content);
-      });
-  }
+	@Input()
+	tsFileContent: string;
+	@Input()
+	htmlTemplateFileContent: string;
+	@Input()
+	sassFileContent: string;
 
   toggleSourceView() {
     this.showSource = !this.showSource;
