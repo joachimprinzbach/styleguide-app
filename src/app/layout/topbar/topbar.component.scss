@@ -31,9 +31,6 @@
     line-height: 58px;
     text-align: center;
     transition: background-color .3s;
-    & :hover {
-      background-color: $BASLER_PRIMARY_RED;
-    }
     & i {
       line-height: inherit;
     }
@@ -73,7 +70,7 @@
         box-sizing: border-box;
         height: 100%;
         line-height: 70px;
-        &:hover {
+        & :hover {
           background-color: $BASLER_PRIMARY_BG_LIGHTGREY;
         }
       }
