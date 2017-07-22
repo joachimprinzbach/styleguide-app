@@ -1,0 +1,15 @@
+<div class="layout-topbar">
+  <a href="#" class="menu-button" (click)="onMenuButtonClick($event)">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <a href="#" class="logo" [routerLink]="['/']">
+    <img alt="logo" src="assets/img/logo.png"/>
+  </a>
+
+  <ul class="topbar-menu">
+    <li>
+      <a href="#" [routerLink]="['/setup']">GET STARTED</a>
+    </li>
+  </ul>
+</div>

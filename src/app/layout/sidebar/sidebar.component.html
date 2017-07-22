@@ -1,0 +1,64 @@
+<div class="layout-sidebar" [ngClass]="{'active': menuActive}">
+  <div class="layout-menu">
+    <a id="menu_input" #inputmenutitle [class.active-menuitem]="inputmenutitle.id == activeMenuId"
+       (click)="activeMenuId = (activeMenuId === inputmenutitle.id ? null : inputmenutitle.id)">
+      <img src="assets/img/icons/input-active.svg" class="layout-menu-icon-active"/>
+      <img src="assets/img/icons/input.svg" class="layout-menu-icon-inactive"/>
+      <span>Input</span>
+    </a>
+    <div
+      [ngClass]="{submenushow: (inputmenutitle.id == activeMenuId), 'submenuhide': (inputmenutitle.id != activeMenuId)}">
+      <a [routerLink]="['/autocomplete']" (click)="menuActive = false">&#9679; AutoComplete</a>
+      <a [routerLink]="['/calendar']" (click)="menuActive = false">&#9679; Calendar</a>
+      <a [routerLink]="['/checkbox']" (click)="menuActive = false">&#9679; Checkbox</a>
+    </div>
+
+    <a id="button_menutitle" #buttonmenutitle [class.active-menuitem]="buttonmenutitle.id == activeMenuId"
+       (click)="activeMenuId = (activeMenuId === buttonmenutitle.id ? null : buttonmenutitle.id)">
+      <img src="assets/img/icons/button-active.svg" class="layout-menu-icon-active"/>
+      <img src="assets/img/icons/button.svg" class="layout-menu-icon-inactive"/>
+      <span>Button</span>
+    </a>
+    <div
+      [ngClass]="{'submenushow': (buttonmenutitle.id == activeMenuId), 'submenuhide': (buttonmenutitle.id != activeMenuId)}">
+      <a [routerLink]="['/button']" (click)="menuActive = false">&#9679; Button</a>
+      <a [routerLink]="['/splitbutton']" (click)="menuActive = false">&#9679; SplitButton</a>
+    </div>
+
+    <a id="menu_panel" #panelmenutitle [class.active-menuitem]="panelmenutitle.id == activeMenuId"
+       (click)="activeMenuId = (activeMenuId === panelmenutitle.id ? null : panelmenutitle.id)">
+      <img src="assets/img/icons/panel-active.svg" class="layout-menu-icon-active"/>
+      <img src="assets/img/icons/panel.svg" class="layout-menu-icon-inactive"/>
+      <span>Panel</span>
+    </a>
+    <div
+      [ngClass]="{'submenushow': (panelmenutitle.id == activeMenuId), 'submenuhide': (panelmenutitle.id != activeMenuId)}">
+      <a [routerLink]="['/accordion']" (click)="menuActive = false">&#9679; Accordion</a>
+      <a [routerLink]="['/toolbar']" (click)="menuActive = false">&#9679; Toolbar</a>
+    </div>
+
+    <a id="menu_overlay" #overlaymenutitle [class.active-menuitem]="overlaymenutitle.id == activeMenuId"
+       (click)="activeMenuId = (activeMenuId === overlaymenutitle.id ? null : overlaymenutitle.id)">
+      <img src="assets/img/icons/overlay-active.svg" class="layout-menu-icon-active"/>
+      <img src="assets/img/icons/overlay.svg" class="layout-menu-icon-inactive"/>
+      <span>Overlay</span>
+    </a>
+    <div
+      [ngClass]="{'submenushow': (overlaymenutitle.id == activeMenuId), 'submenuhide': (overlaymenutitle.id != activeMenuId)}">
+      <a [routerLink]="['/confirmdialog']" (click)="menuActive = false">&#9679; ConfirmDialog</a>
+      <a [routerLink]="['/dialog']" (click)="menuActive = false">&#9679; Dialog</a>
+    </div>
+
+    <a id="menu_menu" #menumenutitle [class.active-menuitem]="menumenutitle.id == activeMenuId"
+       (click)="activeMenuId = (activeMenuId === menumenutitle.id ? null : menumenutitle.id)">
+      <img src="assets/img/icons/menu-active.svg" class="layout-menu-icon-active"/>
+      <img src="assets/img/icons/menu.svg" class="layout-menu-icon-inactive"/>
+      <span>Menu</span>
+    </a>
+    <div
+      [ngClass]="{'submenushow': (menumenutitle.id == activeMenuId), 'submenuhide': (menumenutitle.id != activeMenuId)}">
+      <a [routerLink]="['/menu']" (click)="menuActive = false">&#9679; Menu</a>
+      <a [routerLink]="['/menubar']" (click)="menuActive = false">&#9679; Menubar</a>
+    </div>
+  </div>
+</div>
