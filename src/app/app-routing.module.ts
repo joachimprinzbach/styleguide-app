@@ -7,6 +7,7 @@ import {HomeComponent} from './home/home.component';
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
       {path: 'tile', loadChildren: './examples/panel/tile/tile-example.module#TileExampleModule'},
+		{path: 'button', loadChildren: './examples/button/button-example.module#ButtonExampleModule'},
     ])
   ],
   exports: [RouterModule]

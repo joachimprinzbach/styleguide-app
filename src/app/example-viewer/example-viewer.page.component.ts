@@ -24,7 +24,7 @@ export class ExampleViewerPageComponent implements OnInit {
 	title: string;
 
 	@Input()
-	group: string;
+	group: string = '';
 
 	constructor(private exampleLoader: ExampleLoaderService, private cdRef: ChangeDetectorRef) {
 	}

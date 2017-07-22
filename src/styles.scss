@@ -60,14 +60,38 @@ button {
   height: 50px;
   font-family: ff-meta-web-pro, sans-serif;
   font-style: normal;
-}
-
-button.primary {
-  background-color: $BASLER_SECONDARY_LIGHTBLUE;
-  border-radius: 3px;
-  &:hover {
-    background-color: darken($BASLER_SECONDARY_LIGHTBLUE, 10%);
-    cursor: pointer;
+  &.bv-btn-primary {
+    background-color: $BASLER_SECONDARY_LIGHTBLUE;
+    border-radius: 3px;
+    &:hover {
+      background-color: darken($BASLER_SECONDARY_LIGHTBLUE, 10%);
+      cursor: pointer;
+    }
+  }
+  &.bv-btn-secondary {
+    background-color: $BASLER_PRIMARY_DARKBLUE;
+    border-radius: 3px;
+    &:hover {
+      background-color: $BASLER_SECONDARY_BG_WHITE;
+      border: 1px solid $BASLER_PRIMARY_DARKBLUE;
+      color: $BASLER_PRIMARY_DARKBLUE;
+      cursor: pointer;
+      margin: -1px;
+    }
+  }
+  &.bv-btn-alternative {
+    background-color: $BASLER_SECONDARY_BG_WHITE;
+    border-radius: 3px;
+    margin: -1px;
+    color: $BASLER_PRIMARY_DARKBLUE;
+    border: 1px solid $BASLER_PRIMARY_DARKBLUE;
+    &:hover {
+      background-color: $BASLER_PRIMARY_DARKBLUE;
+      margin: 0;
+      color: $BASLER_SECONDARY_BG_WHITE;
+      border: none;
+      cursor: pointer;
+    }
   }
 }
 

@@ -21,7 +21,8 @@ export class ExampleLoaderService {
 	}
 
 	private loadExampleFile(groupName: string, exampleName: string, extension: string): Observable<any> {
-		return this.http.get(`assets/examples/${groupName}/${exampleName}/${exampleName}-example.component.${extension}.txt`,
+		const group = groupName ? `/${groupName}` : '';
+		return this.http.get(`assets/examples${group}/${exampleName}/${exampleName}-example.component.${extension}.txt`,
 			{responseType: 'text'});
 	}
 
