@@ -1,20 +1,20 @@
 @import "../../variables";
 
 .home .introduction {
-  background-color: $BASLER_SECONDARY_BG_WHITE;
-  padding: 80px 30px 80px 50px;
+	background-color: $BASLER_SECONDARY_BG_WHITE;
+	padding: 80px 30px 80px 50px;
 }
 
 .home .features {
-  background-color: $BASLER_PRIMARY_BG_LIGHTGREY;
-  text-align: center;
-  padding: 30px;
+	background-color: $BASLER_PRIMARY_BG_LIGHTGREY;
+	text-align: center;
+	padding: 30px;
 }
 
 @media screen and (max-width: 64em) {
-  .home {
-    .introduction > div, .features > div {
-      width: 100%;
-    }
-  }
+	.home {
+		.introduction > div, .features > div {
+			width: 100%;
+		}
+	}
 }

@@ -1,15 +1,15 @@
 import {Component, Input} from '@angular/core';
 
 @Component({
-  selector: 'app-example-viewer',
-  templateUrl: './example-viewer.component.html',
-  styleUrls: ['./example-viewer.component.scss']
+	selector: 'app-example-viewer',
+	templateUrl: './example-viewer.component.html',
+	styleUrls: ['./example-viewer.component.scss']
 })
 export class ExampleViewerComponent {
 
-  showSource = false;
-  @Input()
-  title: string;
+	showSource = false;
+	@Input()
+	title: string;
 	@Input()
 	tsFileContent: string;
 	@Input()
@@ -17,7 +17,7 @@ export class ExampleViewerComponent {
 	@Input()
 	sassFileContent: string;
 
-  toggleSourceView() {
-    this.showSource = !this.showSource;
-  }
+	toggleSourceView() {
+		this.showSource = !this.showSource;
+	}
 }

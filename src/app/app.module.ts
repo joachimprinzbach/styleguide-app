@@ -12,21 +12,21 @@ import {HomeComponent} from './home/home.component';
 const routes: Routes = [];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TopbarComponent,
-    SidebarComponent,
-    HomeComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot(routes),
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		TopbarComponent,
+		SidebarComponent,
+		HomeComponent
+	],
+	imports: [
+		BrowserModule,
+		FormsModule,
+		AppRoutingModule,
+		ReactiveFormsModule,
+		RouterModule.forRoot(routes),
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule {
 }

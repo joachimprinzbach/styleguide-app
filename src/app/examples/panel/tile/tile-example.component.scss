@@ -1,16 +1,16 @@
 .tile-container {
-  display: flex;
-  width: 980px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+	display: flex;
+	width: 980px;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 app-tile {
-  display: flex;
-  flex: 0 1 33.33%;
-  flex-direction: column;
-  max-width: 367px;
-  min-width: 367px;
-  margin-top: 20px;
-  height: 280px;
+	display: flex;
+	flex: 0 1 33.33%;
+	flex-direction: column;
+	max-width: 367px;
+	min-width: 367px;
+	margin-top: 20px;
+	height: 280px;
 }

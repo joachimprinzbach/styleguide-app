@@ -5,8 +5,8 @@ import {Observable} from 'rxjs/Observable';
 @Injectable()
 export class ExampleLoaderService {
 
-  constructor(private http: HttpClient) {
-  }
+	constructor(private http: HttpClient) {
+	}
 
 	loadTypescriptFile(groupName: string, exampleName: string): Observable<any> {
 		return this.loadExampleFile(groupName, exampleName, 'ts');

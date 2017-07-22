@@ -1,55 +1,55 @@
 @import "../../variables";
 
 :host {
-  display: block;
+	display: block;
 }
 
 .card-header {
-  align-content: center;
-  align-items: center;
-  display: flex;
-  padding: 0 16px;
-  background: $BASLER_PRIMARY_BG_LIGHTGREY;
+	align-content: center;
+	align-items: center;
+	display: flex;
+	padding: 0 16px;
+	background: $BASLER_PRIMARY_BG_LIGHTGREY;
 }
 
 .example-viewer-header {
-  background: $BASLER_PRIMARY_DARKBLUE;
-  & h1 {
-    margin: 0;
-    padding: 50px;
-    color: $BASLER_SECONDARY_BG_WHITE;
-  }
+	background: $BASLER_PRIMARY_DARKBLUE;
+	& h1 {
+		margin: 0;
+		padding: 50px;
+		color: $BASLER_SECONDARY_BG_WHITE;
+	}
 }
 
 .docs-example-viewer-title-spacer {
-  flex: 1 1 auto;
+	flex: 1 1 auto;
 }
 
 .card-container {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  &:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  }
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	&:hover {
+		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	}
 }
 
 .docs-example-viewer-wrapper {
-  margin: 0 auto;
-  max-width: 1140px;
-  padding: 40px 0;
+	margin: 0 auto;
+	max-width: 1140px;
+	padding: 40px 0;
 }
 
 .content-container {
-  padding: 30px;
+	padding: 30px;
 }
 
 .docs-example-viewer-body {
-  padding: 30px;
+	padding: 30px;
 }
 
 .content-section {
-  display: block;
-  border-bottom: solid 1px #dde3e6;
-  padding: 30px;
-  overflow: hidden;
+	display: block;
+	border-bottom: solid 1px #dde3e6;
+	padding: 30px;
+	overflow: hidden;
 }

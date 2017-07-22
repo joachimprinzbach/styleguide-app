@@ -175,6 +175,7 @@ pre[class*="language-"]:after {
 .token.bold {
 	font-weight: bold;
 }
+
 .token.italic {
 	font-style: italic;
 }
@@ -224,10 +225,12 @@ pre[class*="language-"][data-line] {
 	padding-bottom: 0;
 	padding-left: 0;
 }
+
 pre[data-line] code {
 	position: relative;
 	padding-left: 4em;
 }
+
 pre .line-highlight {
 	margin-top: 0;
 }
