@@ -1,4 +1,4 @@
-.tile-container {
+.example-container {
 	display: flex;
 	width: 980px;
 	flex-wrap: wrap;
@@ -7,10 +7,27 @@
 
 app-tile {
 	display: flex;
-	flex: 0 1 33.33%;
-	flex-direction: column;
+	flex-direction: row;
 	max-width: 367px;
 	min-width: 367px;
 	margin-top: 20px;
 	height: 280px;
+}
+
+h2 {
+	padding-left: 20px;
+}
+
+// Those styles are defined globally and not necessary for this component.
+// They are only included for information purposes.
+@import "../../../../variables";
+
+.tile-container {
+	flex: 1;
+	box-shadow: 0 0 10px 0 $BASLER_CARD_SHADOW_COLOR;
+	background-color: $BASLER_SECONDARY_BG_WHITE;
+	&:hover {
+		box-shadow: 0 0 30px 0 $BASLER_CARD_SHADOW_COLOR;
+		cursor: pointer;
+	}
 }

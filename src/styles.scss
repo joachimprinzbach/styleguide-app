@@ -1,5 +1,6 @@
 @import 'assets/css/code.scss';
 @import "variables";
+@import "primeng_overrides";
 
 html, body {
 	margin: 0;
@@ -42,7 +43,7 @@ h5 {
 	font-weight: 700;
 }
 
-.small-text {
+.bv-small-text {
 	font-size: 15px;
 	color: $BASLER_PRIMARY_DARKBLUE;
 }
@@ -52,44 +53,67 @@ p {
 	margin: 0;
 }
 
-button {
+.bv-close-button {
+	box-sizing: border-box;
 	border: none;
+	color: $BASLER_PRIMARY_DARKBLUE;
+	padding: 14px 24px 20px 24px;
+	font-size: 15px;
+	height: 50px;
+	font-family: ff-meta-web-pro, sans-serif;
+	background-color: $BASLER_SECONDARY_BG_WHITE;
+	font-weight: bold;
+	margin-right: 12px;
+	cursor: pointer;
+	&:focus {
+		outline: 0;
+	}
+}
+
+.bv-btn {
+	box-sizing: border-box;
+	border-radius: 3px;
 	color: $BASLER_SECONDARY_BG_WHITE;
 	padding: 14px 24px 20px 24px;
 	font-size: 15px;
 	height: 50px;
 	font-family: ff-meta-web-pro, sans-serif;
 	font-style: normal;
+	transition: all 0.3s;
+	transition-property: all;
+	transition-duration: 0.3s;
+	transition-timing-function: initial;
+	transition-delay: initial;
+	&:focus {
+		outline: 0;
+	}
 	&.bv-btn-primary {
 		background-color: $BASLER_SECONDARY_LIGHTBLUE;
-		border-radius: 3px;
+		border: 1px solid $BASLER_SECONDARY_LIGHTBLUE;
 		&:hover {
 			background-color: darken($BASLER_SECONDARY_LIGHTBLUE, 10%);
+			border: 1px solid darken($BASLER_SECONDARY_LIGHTBLUE, 10%);
 			cursor: pointer;
 		}
 	}
 	&.bv-btn-secondary {
 		background-color: $BASLER_PRIMARY_DARKBLUE;
-		border-radius: 3px;
+		border: 1px solid $BASLER_PRIMARY_DARKBLUE;
 		&:hover {
 			background-color: $BASLER_SECONDARY_BG_WHITE;
 			border: 1px solid $BASLER_PRIMARY_DARKBLUE;
 			color: $BASLER_PRIMARY_DARKBLUE;
 			cursor: pointer;
-			margin: -1px;
 		}
 	}
 	&.bv-btn-alternative {
 		background-color: $BASLER_SECONDARY_BG_WHITE;
-		border-radius: 3px;
-		margin: -1px;
-		color: $BASLER_PRIMARY_DARKBLUE;
 		border: 1px solid $BASLER_PRIMARY_DARKBLUE;
+		color: $BASLER_PRIMARY_DARKBLUE;
 		&:hover {
 			background-color: $BASLER_PRIMARY_DARKBLUE;
-			margin: 0;
+			border: 1px solid $BASLER_PRIMARY_DARKBLUE;
 			color: $BASLER_SECONDARY_BG_WHITE;
-			border: none;
 			cursor: pointer;
 		}
 	}

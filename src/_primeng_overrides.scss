@@ -1,0 +1,13 @@
+.ui-dialog.ui-widget .ui-dialog-content {
+	padding: 0;
+	box-shadow: 0 2px 25px 0 $BASLER_BOX_SHADOW_COLOR;
+}
+
+.ui-widget-content {
+	border: none;
+}
+
+.ui-widget-overlay {
+	opacity: 0.95;
+	background: $BASLER_SECONDARY_BG_WHITE;
+}

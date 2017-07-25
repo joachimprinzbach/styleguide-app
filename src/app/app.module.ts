@@ -8,6 +8,7 @@ import {TopbarComponent} from './layout/topbar/topbar.component';
 import {SidebarComponent} from './layout/sidebar/sidebar.component';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeComponent} from './home/home.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 const routes: Routes = [];
 
@@ -22,6 +23,7 @@ const routes: Routes = [];
 		BrowserModule,
 		FormsModule,
 		AppRoutingModule,
+		BrowserAnimationsModule,
 		ReactiveFormsModule,
 		RouterModule.forRoot(routes),
 	],

@@ -9,6 +9,7 @@ import {HomeComponent} from './home/home.component';
 			{path: 'tile', loadChildren: './examples/panel/tile/tile-example.module#TileExampleModule'},
 			{path: 'button', loadChildren: './examples/button/button-example.module#ButtonExampleModule'},
 			{path: 'typography', loadChildren: './examples/typography/typography-example.module#TypographyExampleModule'},
+			{path: 'dialog', loadChildren: './examples/overlay/dialog/dialog-example.module#DialogExampleModule'},
 		])
 	],
 	exports: [RouterModule]

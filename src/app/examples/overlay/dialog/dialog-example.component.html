@@ -1,0 +1,14 @@
+<app-example-viewer-page [title]="'dialog'" [group]="'overlay'">
+    <button (click)="isVisible=true" class="bv-btn bv-btn-secondary">Open Dialog</button>
+    <p-dialog [modal]="true" (onHide)="isVisible=false" [resizable]="false" [draggable]="false"
+              [(visible)]="isVisible" [dismissableMask]="true" [showHeader]="false">
+        <div class="content-container">
+            <img src="assets/img/bend.jpg" alt="bend">
+            <div class="content">
+                <h1>Some Heading</h1>
+                <p>Some further info</p>
+            </div>
+            <button (click)="isVisible=false" class="bv-close-button"><i class="fa fa-times fa-lg"></i></button>
+        </div>
+    </p-dialog>
+</app-example-viewer-page>
