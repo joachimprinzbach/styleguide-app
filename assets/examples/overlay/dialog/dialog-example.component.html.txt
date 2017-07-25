@@ -1,0 +1,12 @@
+&lt;button (click)=&quot;isVisible=true&quot; class=&quot;bv-btn bv-btn-secondary&quot;&gt;Open Dialog&lt;/button&gt;
+&lt;p-dialog [modal]=&quot;true&quot; (onHide)=&quot;isVisible=false&quot; [resizable]=&quot;false&quot; [draggable]=&quot;false&quot;
+          [(visible)]=&quot;isVisible&quot; [dismissableMask]=&quot;true&quot; [showHeader]=&quot;false&quot;&gt;
+    &lt;div class=&quot;content-container&quot;&gt;
+        &lt;img src=&quot;assets/img/bend.jpg&quot; alt=&quot;bend&quot;&gt;
+        &lt;div class=&quot;content&quot;&gt;
+            &lt;h1&gt;Some Heading&lt;/h1&gt;
+            &lt;p&gt;Some further info&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;button (click)=&quot;isVisible=false&quot; class=&quot;bv-close-button&quot;&gt;&lt;i class=&quot;fa fa-times fa-lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/p-dialog&gt;

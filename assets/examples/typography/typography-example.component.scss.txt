@@ -1,0 +1,54 @@
+// Those styles are defined globally and not necessary for this component.
+// They are only included for information purposes.
+@import "../../../variables";
+
+html, body {
+	margin: 0;
+	padding: 0;
+	ul {
+		padding: 0;
+	}
+	background-color: $BASLER_PRIMARY_BG_LIGHTGREY;
+}
+
+body {
+	font-family: ff-meta-web-pro, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.3;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 400;
+	color: $BASLER_PRIMARY_DARKBLUE;
+}
+
+h1 {
+	font-size: 44px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+h5 {
+	color: $BASLER_PRIMARY_DARKBLUE;
+	margin: 20px 0 0 0;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.bv-small-text {
+	font-size: 15px;
+	color: $BASLER_PRIMARY_DARKBLUE;
+}
+
+p {
+	font-size: 18px;
+	margin: 0;
+}
