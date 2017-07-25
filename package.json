@@ -5,8 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "node scripts/copy-examples.js && ng serve --sourcemap --extractCss",
-    "build": "node scripts/copy-examples.js ng build",
-    "build:github": "node scripts/copy-examples.js ng build --prod --sourcemap --extractCss --output-path docs --base-href styleguide-app",
+    "build": "node scripts/copy-examples.js && ng build",
+    "build:github": "node scripts/copy-examples.js && ng build --prod --sourcemap --extractCss --output-path docs --base-href styleguide-app",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
